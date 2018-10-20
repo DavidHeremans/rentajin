@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 var http = require("http");
 
 setInterval(function(){
-  http.get("http://rentajin.herokuapp.com/");
+  http.get("http://rentajin3012.herokuapp.com/");
   console.log('made get request');
 }, 1500000);
 
@@ -56,14 +56,14 @@ app.post("/sendMail", function(req,res){
     var transporter = nodemailer.createTransport({
       service: 'outlook365',
       auth: {
-        user: 'rentajin2@outlook.be',
+        user: 'rentajin3012@outlook.be',
         pass: 'jin3012jin3012'
       }
     });
     
     var mailOptions = {
       from: name,
-      to: 'rentajin@outlook.com',
+      to: 'rentajin3012@outlook.be',
       subject: 'Rent a Jin aanvraag van '+ name,
       text: '//TELEFOON// = ' + telefoonNummer +' //NAAM// = ' + name + " //EMAIL// = " + email + " //AANTALPERS// = " + aantalPersonen + " //OMSCHRIJVING// " + omschrijving
     };
@@ -80,7 +80,7 @@ app.post("/sendMail", function(req,res){
     var transporter = nodemailer.createTransport({
       service: 'outlook365',
       auth: {
-        user: 'rentajin@outlook.com',
+        user: 'rentajin3012@outlook.be',
         pass: 'jin3012jin3012'
       }
     });
