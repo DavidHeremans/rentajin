@@ -39,7 +39,7 @@ app.get("/mailKlant", function(req,res){
 
 //POST REQUESTS
 
-//MAIL CREDENTIALS: rentajin@outlook.com - jin3012jin3012, rentajin2@outlook.be - jin3012jin3012
+//MAIL CREDENTIALS: rentajin3012@outlook.com - jin3012jin3012, rentajin2@outlook.be - jin3012jin3012
 
 app.post("/sendMail", function(req,res){
     console.log("De server is bereikt via /sendMail");
