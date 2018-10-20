@@ -39,7 +39,7 @@ app.get("/mailKlant", function(req,res){
 
 //POST REQUESTS
 
-//MAIL CREDENTIALS: rentajin3012@outlook.com - jin3012jin3012, rentajin2@outlook.be - jin3012jin3012
+//MAIL CREDENTIALS: rentajin3012@outlook.be - jin3012jin3012, rentajin2@outlook.be - jin3012jin3012
 
 app.post("/sendMail", function(req,res){
     console.log("De server is bereikt via /sendMail");
@@ -86,7 +86,7 @@ app.post("/sendMail", function(req,res){
     });
     
     var mailOptions2 = {
-      from: 'Rentajin',
+      from: 'Rentajin3012',
       to: email,
       subject: 'BEVESTIGING',
       text: 'Beste '+name+' we hebben uw bericht goed ontvangen en nemen zo snel mogelijk contact met u op!'
