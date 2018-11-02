@@ -89,8 +89,7 @@ app.post("/sendMail", function(req,res){
       from: 'Rentajin3012',
       to: email,
       subject: 'BEVESTIGING',
-      text: 'Beste '+name+' we hebben uw bericht goed ontvangen en nemen zo snel mogelijk contact met u op!',
-      text: 'UW gegevens: Naam: ' +name+' Telefoon: ' +telefoonNummer+' Email: ' +email+' Aantal personen: ' +aantalPersonen+' Omschrijving:' +omschrijving+'.'
+      text: 'Beste '+name+' we hebben uw bericht goed ontvangen en nemen zo snel mogelijk contact met u op! UW gegevens: Naam: ' +name+ ', Telefoon: ' +telefoonNummer+ ', Email: ' +email+', Aantal personen: ' +aantalPersonen+', Omschrijving:' +omschrijving+'.'
     };
     
     transporter.sendMail(mailOptions2, function(error, info){
