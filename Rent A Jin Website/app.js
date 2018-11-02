@@ -69,7 +69,7 @@ app.post("/sendMail", function(req,res){
       text: '//TELEFOON// = ' + telefoonNummer +' //NAAM// = ' + name + " //EMAIL// = " + email + " //AANTALPERS// = " + aantalPersonen + " //OMSCHRIJVING// " + omschrijving
     };
     
-    transporter.sendMail(verstuur, function(error, info){
+    transporter.sendMail(verstuur[0, 1], function(error, info){
       if (error) {
         console.log(error);
       } else {
