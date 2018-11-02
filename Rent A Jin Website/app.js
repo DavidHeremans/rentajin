@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
+var verstuur = [mailOptions, mailOptions2];
 
 
 app.use(bodyParser.urlencoded({extended:true}));
@@ -68,7 +69,7 @@ app.post("/sendMail", function(req,res){
       text: '//TELEFOON// = ' + telefoonNummer +' //NAAM// = ' + name + " //EMAIL// = " + email + " //AANTALPERS// = " + aantalPersonen + " //OMSCHRIJVING// " + omschrijving
     };
     
-    transporter.sendMail(mailOptions, function(error, info){
+    transporter.sendMail(verstuur, function(error, info){
       if (error) {
         console.log(error);
       } else {
